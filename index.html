@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sam Weiller</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat|Raleway:300,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="myStyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.3.2/css/simple-line-icons.css">
+
+    <style type="text/css">
+        body {
+            font-family: 'Raleway';
+            font-size: 50px;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+    <script src="vendors/jquery.easings.min.js"></script>
+
+
+    <!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
+    <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+
+    <script type="text/javascript" src="jquery.fullPage.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage();
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="fullpage">
+        <div class="section" id="hello">
+            <div class="pageText" id="heyTop">
+                <p>Hi.</p>
+                <p>I am Sam.</p>
+
+            </div>
+            <hr class="heyLine" noshade>
+            <div class="pageText" id="heyBottom">
+                <p>I am a DEVELOPER.</p>
+                <p style="text-indent: 64.5px">DESIGNER.</p>
+                <p style="text-indent: 64.5px">UXer.</p>
+            </div>
+            <div class="affordance">
+                <svg id="arrow" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87.29 31.87"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;}</style></defs><title>arrow</title><polyline class="cls-1" points="0.29 0.41 43.64 31.25 87 0.41"/></svg>
+            </div>
+        </div>
+
+
+
+
+        <div class="section" id="construction">
+            <div class="pageText" id="conTop">
+                <p>My website is undergoing some</p>
+                <p>changes right now.</p>
+            </div>
+            <hr class="conLine" noshade>
+            <div class="pageText" id="conBottom">
+                <p>But you can still check out <a href="#">my resume</a>.</p>
+                <p>Or get in touch by email or social media.</p>
+            </div>
+            <div class="social">
+                <a href="mailto:sam.weiller@gmail.com">
+                    <i class="icon-envelope-open socialIcon"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/sam-weiller-76b8a51a" target="_blank">
+                    <i class="icon-social-linkedin socialIcon"></i>
+                </a>
+
+                <a href="https://www.github.com/samweiller" target="_blank">
+                <i class="icon-social-github socialIcon"></i>
+             </a>
+             <a href="https://www.pinterest.com/samweiller" target="_blank">
+                <i class="icon-social-pinterest socialIcon"></i>
+             </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+a {
+   text-decoration: none;
+}
+
+.section {
+
+}
+
+.pageText {
+   display: inline-block;
+   text-align: left;
+}
+
+.affordance {
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   width: 80px;
+   position: absolute;
+   top: 82%;
+   left: calc(50% - 40px);
+}
+
+.social {
+   position: relative;
+   top: 10%;
+}
+
+.socialIcon {
+   margin-left: 20px;
+   margin-right: 20px;
+   color: #99A9BA;
+   transition: color .3s ease;
+}
+
+.socialIcon:hover {
+   color: #FFFFFF;
+}
+
+#hello {
+   background-image: linear-gradient(to top, #99A9BA, #FFFFFF);
+   text-align: center;
+
+}
+
+#heyTop p {
+   font-family: Montserrat;
+   font-weight: Light;
+   font-size: 60px;
+   margin: 0;
+}
+
+#heyBottom p {
+   font-family: Lato;
+   font-weight: 300;
+   font-size: 20px;
+   margin: 6px;
+   letter-spacing: 1px;
+}
+
+#construction {
+   background-image: linear-gradient(to bottom, #99A9BA, #275AA9);
+   text-align: center;
+   font-size: 50px;
+}
+
+#conTop p {
+   font-family: Montserrat;
+   font-size: 40px;
+   margin: 0;
+}
+
+#conBottom p {
+   font-family: Lato;
+   font-weight: 300;
+   font-size: 25px;
+   margin: 6px;
+   letter-spacing: 1px;
+   margin-left: -140px;
+}
+
+hr.heyLine {
+   width: 40%;
+   border: 0;
+    height: 1px;
+    background: #333;
+    /*background-image: linear-gradient(to right, rgba(50, 50, 50, 0), #333, rgba(50, 50, 50, 0));*/
+}
+
+hr.conLine {
+   width: 40%;
+   border: 0;
+    height: 1px;
+    background: #333;
+    /*background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #333, rgba(255, 255, 255, 0));*/
+}
