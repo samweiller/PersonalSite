@@ -1,5 +1,10 @@
 a {
    text-decoration: none;
+   color: inherit;
+}
+
+a:visited {
+   color:inherit;
 }
 
 .section {
@@ -19,6 +24,9 @@ a {
    position: absolute;
    top: 82%;
    left: calc(50% - 40px);
+   opacity: 0;
+   animation: fadeIn forwards 3s ease;
+   animation-delay: 7s
 }
 
 .social {
@@ -29,7 +37,7 @@ a {
 .socialIcon {
    margin-left: 20px;
    margin-right: 20px;
-   color: #99A9BA;
+   color: #AFC5DC;
    transition: color .3s ease;
 }
 
@@ -50,12 +58,28 @@ a {
    margin: 0;
 }
 
+#firstLoad {
+   animation: fadeIn forwards 1.5s ease;
+}
+
+#secondLoad {
+   opacity: 0;
+   animation: fadeIn forwards 2s ease;
+   animation-delay: 1s;
+}
+
+@keyframes fadeIn {
+   from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
 #heyBottom p {
    font-family: Lato;
    font-weight: 300;
    font-size: 20px;
    margin: 6px;
    letter-spacing: 1px;
+   opacity: 0;
 }
 
 #construction {
@@ -83,14 +107,15 @@ hr.heyLine {
    width: 40%;
    border: 0;
     height: 1px;
-    background: #333;
-    /*background-image: linear-gradient(to right, rgba(50, 50, 50, 0), #333, rgba(50, 50, 50, 0));*/
+    /*background: #333;*/
+    background-image: linear-gradient(to right, rgba(200, 209, 218, 1), #333, rgba(200, 209, 218, 1));
+    opacity: 0;
 }
 
 hr.conLine {
    width: 40%;
    border: 0;
     height: 1px;
-    background: #333;
-    /*background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #333, rgba(255, 255, 255, 0));*/
+    /*background: #333;*/
+    background-image: linear-gradient(to right, rgba(98, 131, 180, 1), #333, rgba(98, 131, 180, 1));
 }
