@@ -3,104 +3,255 @@
 
 <head>
     <title>Sam Weiller</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat|Raleway:300,400" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./css/myStyles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.3.2/css/simple-line-icons.css">
-
-    <style type="text/css">
-        body {
-            font-family: 'Raleway';
-            font-size: 50px;
-        }
-    </style>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:200,300,400|Montserrat|Raleway:200,300,400" rel="stylesheet">
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-    <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
     <script src="vendors/jquery.easings.min.js"></script>
-    <script>
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
 
-        ga('create', 'UA-84000518-1', 'auto');
-        ga('send', 'pageview');
-    </script>
-
-    <!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
-    <script type="text/javascript" src="./vendors/scrolloverflow.min.js"></script>
-
-    <script type="text/javascript" src="./js/jquery.fullPage.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
-            $('#fullpage').fullpage();
+            $('#fullpage').fullpage({
+                scrollOverflow: true,
+                autoScrolling: true
+            });
         });
     </script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/myStyles.css">
 
 </head>
 
 <body>
-    <div id="fullpage">
-        <div class="section" id="hello">
-            <div class="pageText" id="heyTop">
-                <p id="firstLoad">Hi.</p>
-                <p id="secondLoad">I am Sam W.</p>
+    <div id=fullpage>
+        <div class="section sec-hello">
+            <!-- <video autoplay="true" preload="auto" loop muted id="myVideo">
+			<source src="video/Section01_BackC.mp4" type="video/mp4">
+         </video>
+            <script>
+                document.getElementById('myVideo').play();
+            </script> -->
+            <div class="container">
+                <div class="row">
+                    <div class="hello-header col-md-6 col-md-offset-4 layer"><span style="color: #F5EA6C">Hi.</span> I am Sam.</div>
+                </div>
+                <div class="row">
+                    <div class="hello-body col-md-6 col-md-offset-4 layer">I am a developer, a designer, and a UXer,<br>working to develop technologies that<br>delight people in their everday lives.</div>
+                </div>
+                <div class="row">
+                    <div class="affordance layer">
+                        <svg id="arrowLeft" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 32"><defs><style>.cls-1{fill:none;stroke:#FFF;stroke-miterlimit:10;}</style></defs><title>arrow</title><polyline class="cls-1" points="43 32 0 0"/></svg>
 
-            </div>
-            <hr class="heyLine" noshade style="animation: fadeIn forwards 2s ease; animation-delay: 2.5s">
-            <div class="pageText" id="heyBottom">
-                <p style="animation: fadeIn forwards 1s ease; animation-delay: 2.5s">I am a DEVELOPER.</p>
-                <p id="indentedID" style="animation: fadeIn forwards 1s ease; animation-delay: 3.5s">DESIGNER.</p>
-                <p id="indentedID" style="animation: fadeIn forwards 1s ease; animation-delay: 4.5s">UXer.</p>
-            </div>
-            <div class="affordance">
-                <svg id="arrow" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87.29 31.87"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;}</style></defs><title>arrow</title><polyline class="cls-1" points="0.29 0.41 43.64 31.25 87 0.41"/></svg>
-            </div>
-        </div>
-
-
-
-
-        <div class="section" id="construction">
-            <div class="pageText" id="conTop">
-                <p>My website is undergoing some</p>
-                <p>changes right now.</p>
-            </div>
-            <hr class="conLine" noshade>
-            <div class="pageText" id="conBottom">
-                <p>But you can still check out <a href="assets/SamWeiller_Resume.pdf" target="_blank"><u>my resume</u></a>.</p>
-                <p>Or get in touch via email or social media.</p>
-            </div>
-            <div class="social">
-                <a href="mailto:hello@samweiller.io">
-                    <i class="icon-envelope-open socialIcon"></i>
-                </a>
-
-                <a href="https://www.linkedin.com/in/sam-weiller-76b8a51a" target="_blank">
-                    <i class="icon-social-linkedin socialIcon"></i>
-                </a>
-
-                <a href="https://www.github.com/samweiller" target="_blank">
-                    <i class="icon-social-github socialIcon"></i>
-                </a>
-                <a href="https://www.pinterest.com/samweiller" target="_blank">
-                    <i class="icon-social-pinterest socialIcon"></i>
-                </a>
+                        <svg id="arrowRight" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 32"><defs><style>.cls-1{fill:none;stroke:#FFF;stroke-miterlimit:10;}</style></defs><title>arrow</title><polyline class="cls-1" points="0 32 43 0"/></svg>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+        <div class="section sec-who">
+            <video autoplay="true" preload="auto" loop muted id="myVideo">
+			<source src="video/Section01_BackC.mp4" type="video/mp4">
+         </video>
+            <script>
+                document.getElementById('myVideo').play();
+            </script>
+            <div class="container layer">
+                <div class="row">
+                    <div class="who-header col-md-8 col-md-offset-2 layer">
+                        Who I Am.
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="who-body col-md-8 col-md-offset-2 layer">
+                        <p>
+                            I like to start every project the same way: with a blank piece of paper and a sharpie. No constraints, no problems, just paper and pen. I think, sketch, mockup, prototype, and develop.</p>
+                        <p>
+                            In this process, I draw from a background in cognitive science research, music composition, and computer science, to create awesome, user-centered technology that brightens people's days, no matter the size. From large-scale platforms down to the smallest
+                            animations, I want people to be delighted by their experiences. I am currently studying at Georgia Tech to focus my development and design skills into becoming a full stack UXer.</p>
+                        <p>When I'm not making cool things, you can find me training service dogs, running sound for a local theatre, or playing the bassoon at a farmer's markets. I like to keep busy, so I'm always looking for the next best way to spend
+                            my weekend.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <br />
+                    <div class="resume-button-container layer">
+                        <a class="btn btn-default resume-button col-md-2 col-md-offset-2 layer" href="#" role="button">My Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section sec-what">
+            <div class="container">
+                <div class="row">
+                    <div class="what-header">
+                        What I Do.
+                    </div>
+                </div>
+                <br />
+
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-2">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" height="250px" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" xml:space="preserve">
+                       <style type="text/css">
+                          .st0{fill:none;stroke:#CFDB4E;stroke-width:2;}
+                       </style>
+                       <g id="Corner">
+                          <g id="Artboard">
+                             <g id="Group" transform="translate(32.000000, 52.000000)">
+                                <path id="Path" class="st0" d="M31.4,0C15.7,0,8.1,0,8.1,23.9s0,58.9,0,63C8.1,91,0,94,0,94.8s8.1,3.6,8.1,7.9
+                                   c0,4.3,0,39.3,0,63.4s8.1,23.5,23.4,23.5"/>
+                                <path id="Path-Copy" class="st0" d="M90,0c15.7,0,23.4,0,23.4,23.9s0,58.9,0,63c0,4.1,8.1,7.1,8.1,7.9s-8.1,3.6-8.1,7.9
+                                   c0,4.3,0,39.3,0,63.4s-8.1,23.5-23.4,23.5"/>
+                             </g>
+                          </g>
+                       </g>
+                       </svg>
+                    </div>
+                    <div class="col-md-4 col-md-offset-2">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" height="250px" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" xml:space="preserve">
+                        <style type="text/css">
+                        	.st0{fill:none;stroke:#F5EA6C;stroke-width:2;}
+                        </style>
+                        <g id="Corner">
+                        	<g id="Artboard">
+                        		<g id="Group" transform="translate(32.000000, 52.000000)">
+                        			<path id="Path" class="st0" d="M31.4,0C15.7,0,8.1,0,8.1,23.9s0,58.9,0,63C8.1,91,0,94,0,94.8s8.1,3.6,8.1,7.9
+                        				c0,4.3,0,39.3,0,63.4s8.1,23.5,23.4,23.5"/>
+                        			<path id="Path-Copy" class="st0" d="M90,0c15.7,0,23.4,0,23.4,23.9s0,58.9,0,63c0,4.1,8.1,7.1,8.1,7.9s-8.1,3.6-8.1,7.9
+                        				c0,4.3,0,39.3,0,63.4s-8.1,23.5-23.4,23.5"/>
+                        		</g>
+                        	</g>
+                        </g>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="what-body col-md-4 col-md-offset-1">
+                        <h2 class="what-subtitle">I Develop.</h2>I started developing on the backend in Python and bash, but have quickly moved to working on all sides of the stack in both native and web. I can pick up new languages very quickly, but am most comfortable in Javascript (including Node), HTML, CSS, Swift, and Python.
+
+                    </div>
+                    <div class="what-body col-md-4 col-md-offset-2">
+                        <h2 class="what-subtitle">I Design.</h2> Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. Donec sagittis faucibus lacus eget blandit. Mauris vitae ultricies metus, at condimentum
+                        nulla.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section sec-work">
+            <div class="container">
+                <div class="row">
+                    <div class="work-header">
+                        My Work.
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="#" class="thumb-border thumbnail">
+                            <div class="frontpage_square">
+                                <img src="img/demo1.jpg" class="img img-responsive full-width" />
+                            </div>
+                            <div class="caption">
+                                <h4>HotSwap</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#" class="thumbnail thumb-border">
+                            <div class="frontpage_square">
+                                <img src="img/demo4.jpg" class="img img-responsive full-width" />
+                            </div>
+                            <div class="caption">
+                                <h4>Junior</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#" class="thumbnail thumb-border">
+                            <div class="frontpage_square">
+                                <img src="img/demo2.jpg" class="img img-responsive full-width" />
+                            </div>
+                            <div class="caption">
+                                <h4>SWAT</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#" class="thumbnail thumb-border">
+                            <div class="frontpage_square">
+                                <img src="img/demo3.jpg" class="img img-responsive full-width" />
+                            </div>
+                            <div class="caption">
+                                <h4>UberCARE</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="#" class="thumbnail thumb-border">
+                            <div class="frontpage_square">
+                                <img src="img/demo5.jpg" class="img img-responsive full-width" />
+                            </div>
+                            <div class="caption">
+                                <h4>Pinecone</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#" class="thumbnail thumb-border">
+                            <div class="frontpage_square">
+                                <img src="img/demo6.jpg" class="img img-responsive full-width" />
+                            </div>
+                            <div class="caption">
+                                <h4>Remark</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#" class="thumbnail thumb-border">
+                            <div class="frontpage_square">
+                                <img src="img/demo7.jpg" class="img img-responsive full-width" />
+                            </div>
+                            <div class="caption">
+                                <h4>AFE Bootcamps</h4>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-3">
+                        <a href="#" class="thumbnail thumb-border">
+                            <div class="frontpage_square">
+                                <img src="img/demo8.jpg" class="img img-responsive full-width" />
+                            </div>
+                            <div class="caption">
+                                <h4>Design &amp; Creation</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section sec-contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-header">
+                        Let's Chat.
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="contact-body">
+                        <a href="mailto:hello@samweiller.io">hello@samweiller.io</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
-
-</html>
