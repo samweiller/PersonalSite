@@ -4,7 +4,7 @@
 <head>
     <title>Sam Weiller</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat|Raleway:300,400" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="myStyles.css">
+    <link rel="stylesheet" type="text/css" href="css/myStyles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.3.2/css/simple-line-icons.css">
 
     <style type="text/css">
@@ -14,18 +14,35 @@
         }
     </style>
 
-    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
     <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
     <script src="vendors/jquery.easings.min.js"></script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
+        ga('create', 'UA-84000518-1', 'auto');
+        ga('send', 'pageview');
+    </script>
 
     <!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
     <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
 
-    <script type="text/javascript" src="jquery.fullPage.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $('#fullpage').fullpage();
@@ -45,8 +62,8 @@
             <hr class="heyLine" noshade style="animation: fadeIn forwards 2s ease; animation-delay: 2.5s">
             <div class="pageText" id="heyBottom">
                 <p style="animation: fadeIn forwards 1s ease; animation-delay: 2.5s">I am a DEVELOPER.</p>
-                <p style="text-indent: 64px; animation: fadeIn forwards 1s ease; animation-delay: 3.5s">DESIGNER.</p>
-                <p style="text-indent: 64px; animation: fadeIn forwards 1s ease; animation-delay: 4.5s">UXer.</p>
+                <p id="indentedID" style="animation: fadeIn forwards 1s ease; animation-delay: 3.5s">DESIGNER.</p>
+                <p id="indentedID" style="animation: fadeIn forwards 1s ease; animation-delay: 4.5s">UXer.</p>
             </div>
             <div class="affordance">
                 <svg id="arrow" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87.29 31.87"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;}</style></defs><title>arrow</title><polyline class="cls-1" points="0.29 0.41 43.64 31.25 87 0.41"/></svg>
@@ -63,11 +80,11 @@
             </div>
             <hr class="conLine" noshade>
             <div class="pageText" id="conBottom">
-                <p>But you can still check out <a href="SamWeiller_Resume.pdf" target="_blank"><u>my resume</u></a>.</p>
+                <p>But you can still check out <a href="assets/SamWeiller_Resume.pdf" target="_blank"><u>my resume</u></a>.</p>
                 <p>Or get in touch via email or social media.</p>
             </div>
             <div class="social">
-                <a href="mailto:sam.weiller@gmail.com">
+                <a href="mailto:hello@samweiller.io">
                     <i class="icon-envelope-open socialIcon"></i>
                 </a>
 
@@ -76,11 +93,11 @@
                 </a>
 
                 <a href="https://www.github.com/samweiller" target="_blank">
-                <i class="icon-social-github socialIcon"></i>
-             </a>
-             <a href="https://www.pinterest.com/samweiller" target="_blank">
-                <i class="icon-social-pinterest socialIcon"></i>
-             </a>
+                    <i class="icon-social-github socialIcon"></i>
+                </a>
+                <a href="https://www.pinterest.com/samweiller" target="_blank">
+                    <i class="icon-social-pinterest socialIcon"></i>
+                </a>
             </div>
         </div>
     </div>
