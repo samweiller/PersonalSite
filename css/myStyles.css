@@ -3,6 +3,10 @@
    text-rendering: optimizeLegibility
 }
 
+a:hover {
+   text-decoration: none;
+}
+
 .sec-hello {
    vertical-align: middle;
 }
@@ -22,7 +26,24 @@
    		object-fit: cover; /*cover video background */
    		z-index:-1;
 	}
+   @media only screen and (max-width: 991px) {
+      #myVideo{
+      		position: absolute;
+      		right: 0;
+      		bottom: 0;
+      		top:0;
+      		left: 65%;
+      		width: 100%;
+      		height: 100%;
+      		background-size: 100% 100%;
+       		background-color: white; /* in case the video doesn't fit the whole page*/
+        		background-position: center center;
+        		background-size: contain;
+         		object-fit: cover; /*cover video background */
+         		z-index:-1;
+      	}
 
+}
 
 	/* Layer with position absolute in order to have it over the video
 	* (and hide the video navigation controls on mouse move)
@@ -93,6 +114,24 @@
   }
 }
 
+.who-bg {
+   position: absolute;
+   height: auto;
+   width: 100%;
+   filter: blur(3px) brightness(70%);
+   margin-top: -12%
+}
+
+@media only screen and (max-width: 991px) {
+   .who-bg {
+      position: absolute;
+      height: 100%;
+      width: auto;
+      filter: blur(3px) brightness(70%);
+      margin-top: -3%;
+   }
+}
+
 .sec-who .layer{
    position: relative;
    z-index: 5;
@@ -134,7 +173,7 @@
 }
 
 .resume-button:hover {
-   background-color: #58A04F;
+   background-color: #FFF;
 }
 
 .what-header {
@@ -215,7 +254,7 @@ a.thumbnail:hover .work-image-label {
 .work-image-label {
    transition: background-color 0.5s ease;
    position: absolute;
-   margin-top: 81%;
+   margin-top: 89%;
    margin-left: 0;
    padding-left: 4%;
    padding-top: 0;
@@ -224,22 +263,33 @@ a.thumbnail:hover .work-image-label {
 }
 
 .work-image-text {
-   margin-top: 5%;
+   margin-top: 3%;
    margin-bottom: 4%;
    font-family: Montserrat;
    font-weight: 400;
    color: black;
-   font-size: 27px;
+   font-size: 16px;
 }
 
 @media only screen and (max-width: 1200px) {
+   .work-image-label {
+      transition: background-color 0.5s ease;
+      position: absolute;
+      margin-top: 89%;
+      margin-left: 0;
+      padding-left: 4%;
+      padding-top: 0;
+      background-color: rgba(153, 169, 186, .6);
+      width: 100%;
+   }
+
    .work-image-text {
-      margin-top: 5%;
+      margin-top: 2%;
       margin-bottom: 4%;
       font-family: Montserrat;
       font-weight: 400;
       color: black;
-      font-size: 20px;
+      font-size: 16px;
    }
 }
 
@@ -287,6 +337,25 @@ a.thumbnail:hover .work-image-label {
    color: #000
 }
 
+.contact-body a:hover {
+   text-decoration: underline;
+}
+
+.social-links {
+   text-align: center;
+   margin-top: 10px;
+}
+
+.social-icon {
+   font-size: 40px;
+   color: #000;
+   transition: color .5s ease;
+}
+
+.social-icon:hover {
+   color: #F5EA6C;
+}
+
 
 /* COLORS */
 /*.sec-hello {
@@ -330,12 +399,18 @@ a.thumbnail:hover .work-image-label {
 }*/
 
 .sec-hello {
-   background-color: #dd585a
+   background-color: rgba(0, 0, 0, 0.3);
 }
 
 .sec-who {
-   background-color: rgba(0, 0, 0, 0.4);;
+   /*background-color: #dd585a;*/
+   /*background-image: url('../img/WhoIAm.jpg');*/
+
 }
+
+
+
+
 
 .sec-what {
    background-color: #58A04F

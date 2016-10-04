@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:200,300,400|Montserrat:400,700|Raleway:200,300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.3.2/css/simple-line-icons.css">
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="vendors/jquery.easings.min.js"></script>
     <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+    <script type="text/javascript" src="js/jquery.foggy.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
     <script type="text/javascript" src="js/jquery.fullPage.js"></script>
@@ -17,7 +19,15 @@
         $(document).ready(function() {
             $('#fullpage').fullpage({
                 scrollOverflow: true,
-                autoScrolling: true
+                autoScrolling: true,
+                afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
+                    if (index == 0) {
+                        document.getElementById('myVideo').play();
+                    }
+                },
+                afterRender: function() {
+                    document.getElementById('myVideo').play();
+                }
             });
         });
     </script>
@@ -34,6 +44,9 @@
 <body>
     <div id=fullpage>
         <div class="section sec-hello">
+            <video autoplay="true" preload="auto" loop muted id="myVideo">
+        <source src="video/Section01_BackE.mp4" type="video/mp4">
+        </video>
             <!-- <video autoplay="true" preload="auto" loop muted id="myVideo">
 			<source src="video/Section01_BackC.mp4" type="video/mp4">
          </video>
@@ -57,12 +70,14 @@
             </div>
         </div>
         <div class="section sec-who">
-            <video autoplay="true" preload="auto" loop muted id="myVideo">
-			<source src="video/Section01_BackC.mp4" type="video/mp4">
-         </video>
-            <script>
+            <!-- <video autoplay="true" preload="auto" loop muted id="myVideo">
+			<source src="video/Section01_BackE.mp4" type="video/mp4">
+         </video> -->
+            <!-- <script>
+                document.getElementById('myVideo').pause();
                 document.getElementById('myVideo').play();
-            </script>
+            </script> -->
+            <img src="img/WhoIAm.jpg" class="who-bg" alt="" center center>
             <div class="container layer">
                 <div class="row">
                     <div class="who-header col-md-8 col-md-offset-2 layer">
@@ -74,15 +89,12 @@
                         <p>
                             I like to start every project the same way: with a blank piece of paper and a sharpie. No constraints, no problems, just paper and pen. I think, sketch, mockup, prototype, and develop.</p>
                         <p>
-                            In this process, I draw from a background in cognitive science research, music composition, and computer science, to create awesome, user-centered technology that brightens people's days, no matter the size. From large-scale platforms down to the smallest
-                            animations, I want people to be delighted by their experiences. I am currently studying at Georgia Tech to focus my development and design skills into becoming a full stack UXer.</p>
+                            In this process, I draw from a background in cognitive science research, music composition, and computer science, to create awesome, user-centered technologies that brighten people's days, no matter the size. From large-scale platforms down to the smallest
+                            animations, I want people to be delighted in their experiences. I am currently studying at Georgia Tech to focus my development and design skills into becoming a full stack UXer.</p>
                         <p>When I'm not making cool things, you can find me training service dogs, running sound for a local theatre, or playing the bassoon at a farmer's markets. I like to keep busy, so I'm always looking for the next best way to spend
                             my weekend.</p>
                     </div>
                 </div>
-                <script>
-                   document.getElementById('myVideo').play();
-               </script>
                 <div class="row">
                     <br />
                     <div class="resume-button-container layer">
@@ -141,10 +153,12 @@
 
                 <div class="row">
                     <div class="what-body col-md-4 col-md-offset-1">
-                        <h2 class="what-subtitle">I Develop.</h2>I started developing on the backend in Python and bash, but have quickly moved to working on all sides of the stack in both native and web. I can pick up new languages very quickly, but am most comfortable in Javascript (including Node), HTML, CSS, Swift, and Python.
+                        <h2 class="what-subtitle">I Develop.</h2>I started developing on the backend in Python and bash, but have quickly moved to working on all sides of the stack in both native and web. I can pick up new languages very quickly, but am most comfortable in Javascript (including
+                        Node), HTML, CSS, Swift, and Python.
                     </div>
                     <div class="what-body col-md-4 col-md-offset-2">
-                        <h2 class="what-subtitle">I Design.</h2>Ever since I was a kid I loved ideating. Back then my ideas were bigger than my abilities, but my skills have since caught up to my brain, which allows me to bring my crazy ideas to life. I have a head full of ideas and a Sketch file full of artboards ready to tackle the next project.
+                        <h2 class="what-subtitle">I Design.</h2>Ever since I was a kid I loved ideating. Back then my ideas were bigger than my abilities, but my skills have since caught up to my brain, which allows me to bring my crazy ideas to life. I have a head full of ideas and a Sketch
+                        file full of artboards ready to tackle the next project.
 
                     </div>
                 </div>
@@ -163,8 +177,8 @@
                             <div class="frontpage_square">
                                 <img src="img/HotSwap.png" class="img img-responsive full-width" />
                                 <div class="work-image-label">
-                                <h3 class="work-image-text">HotSwap</h3>
-                             </div>
+                                    <h3 class="work-image-text">HotSwap</h3>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -173,18 +187,18 @@
                             <div class="frontpage_square">
                                 <img src="img/Junior.jpg" class="img img-responsive full-width" />
                                 <div class="work-image-label">
-                                <h3 class="work-image-text">Junior</h3>
-                             </div>
+                                    <h3 class="work-image-text">Junior</h3>
+                                </div>
                             </div>
                         </a>
                     </div>
                     <div class="col-md-3">
                         <a href="#" class="thumbnail thumb-border">
                             <div class="frontpage_square">
-                                <img src="img/demo2.jpg" class="img img-responsive full-width" />
+                                <img src="img/SWAT.png" class="img img-responsive full-width" />
                                 <div class="work-image-label">
-                                <h3 class="work-image-text">SWAT</h3>
-                             </div>
+                                    <h3 class="work-image-text">SWAT</h3>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -193,8 +207,8 @@
                             <div class="frontpage_square">
                                 <img src="img/UberCARE.png" class="img img-responsive full-width" />
                                 <div class="work-image-label">
-                                <h3 class="work-image-text">UberCARE</h3>
-                             </div>
+                                    <h3 class="work-image-text">UberCARE</h3>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -205,18 +219,18 @@
                             <div class="frontpage_square">
                                 <img src="img/Scavenger.png" class="img img-responsive full-width" />
                                 <div class="work-image-label">
-                                <h3 class="work-image-text">Scavenger</h3>
-                             </div>
+                                    <h3 class="work-image-text">Scavenger</h3>
+                                </div>
                             </div>
-                            </a>
+                        </a>
                     </div>
                     <div class="col-md-3">
                         <a href="#" class="thumbnail thumb-border">
                             <div class="frontpage_square">
                                 <img src="img/Remark.png" class="img img-responsive full-width" />
                                 <div class="work-image-label">
-                                <h3 class="work-image-text">Remark</h3>
-                             </div>
+                                    <h3 class="work-image-text">Remark</h3>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -225,8 +239,8 @@
                             <div class="frontpage_square">
                                 <img src="img/AFEs.png" class="img img-responsive full-width" />
                                 <div class="work-image-label">
-                                <h3 class="work-image-text">AFEs</h3>
-                             </div>
+                                    <h3 class="work-image-text">Bootcamps</h3>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -236,8 +250,8 @@
                             <div class="frontpage_square">
                                 <img src="img/Design.png" class="img img-responsive full-width" />
                                 <div class="work-image-label">
-                                <h3 class="work-image-text">Design</h3>
-                             </div>
+                                    <h3 class="work-image-text">Design</h3>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -254,6 +268,28 @@
                 <div class="row">
                     <div class="contact-body">
                         <a href="mailto:hello@samweiller.io">hello@samweiller.io</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4">
+                        <div class="row">
+                            <div class="col-md-4 social-links">
+                                <a href="https://www.linkedin.com/in/sam-weiller-76b8a51a" target="_blank">
+                                    <i class="icon-social-linkedin social-icon"></i>
+                                </a>
+                            </div>
+
+                            <div class="col-md-4 social-links">
+                                <a href="https://www.github.com/samweiller" target="_blank">
+                                    <i class="icon-social-github social-icon"></i>
+                                </a>
+                            </div>
+                            <div class="col-md-4 social-links">
+                                <a href="https://www.pinterest.com/samweiller" target="_blank">
+                                    <i class="icon-social-pinterest social-icon"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
