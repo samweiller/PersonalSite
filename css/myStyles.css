@@ -245,8 +245,8 @@ h4.caption {
 }
 
 .frontpage_square img {
-    position: absolute;
-
+   position: absolute;
+   height: 100%;
 }
 
 a.thumbnail:hover {
