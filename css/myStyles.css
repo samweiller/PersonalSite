@@ -1,6 +1,7 @@
 * {
-   -webkit-font-smoothing: subpixel-antialiased;
-   text-rendering: optimizeLegibility
+   -webkit-font-smoothing: antialiased;
+   text-rendering: optimizeLegibility;
+   -moz-osx-font-smoothing: grayscale;
 }
 
 a:hover {
@@ -65,15 +66,15 @@ a:hover {
     font-family: Montserrat;
     font-size: 55px;
     text-indent: -3px;
-    color: #FDFDFD
+    color: #fff
 }
 
 .hello-body {
     font-family: Raleway;
-    font-weight: 200;
+    font-weight: 400;
     font-size: 20px;
     text-indent: 0px;
-    color: #FDFDFD;
+    color: #fff;
 }
 
 .affordance {
@@ -92,7 +93,7 @@ a:hover {
   stroke-dasharray: 75;
   stroke-dashoffset: 75;
   animation: dash 2s linear forwards;
-  animation-delay: 3s;
+  animation-delay: 6s;
   width: 50px;
   height: 50px;
   /*margin-bottom: -18px;*/
@@ -102,7 +103,7 @@ a:hover {
   stroke-dasharray: 75;
   stroke-dashoffset: 75;
   animation: dash 2s linear forwards;
-  animation-delay: 3s;
+  animation-delay: 6s;
   width: 50px;
   height: 50px;
   /*margin-top: -27px*/
@@ -115,21 +116,25 @@ a:hover {
 }
 
 .who-bg {
-   position: absolute;
+   /*position: absolute;
    height: auto;
-   width: 100%;
-   filter: blur(3px) brightness(70%);
-   margin-top: -12%
-}
-
-@media only screen and (max-width: 991px) {
-   .who-bg {
-      position: absolute;
-      height: 100%;
-      width: auto;
-      filter: blur(3px) brightness(70%);
-      margin-top: -3%;
-   }
+   width: 100%;*/
+   filter: blur(3px) brightness(65%);
+   /*margin-top: -12%*/
+   position: absolute;
+   margin: -5px;
+   right: 0;
+   bottom: 0;
+   top:0;
+   left: 0;
+   width: 104%;
+   height: 104%;
+   background-size: 100% 100%;
+   background-color: white; /* in case the video doesn't fit the whole page*/
+   background-position: center center;
+   background-size: contain;
+      object-fit: cover; /*cover video background */
+      z-index:-1;
 }
 
 .sec-who .layer{
@@ -154,7 +159,8 @@ a:hover {
 
 .who-body {
     font-family: Raleway;
-    font-weight: 200;
+    font-weight: 400;
+    letter-spacing: 1px;
     font-size: 18px;
     text-indent: 0px;
     color: #fff;
@@ -186,7 +192,7 @@ a:hover {
 
 .what-top-body {
    font-family: Raleway;
-   font-weight: lighter;
+   font-weight: 400;
    font-size: 15px;
 }
 
@@ -197,7 +203,7 @@ a:hover {
 
 .what-body {
    font-family: Raleway;
-   font-weight: lighter;
+   font-weight: 400;
    font-size: 18px;
 }
 
