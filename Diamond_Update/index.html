@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sam Weiller</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+    <script src="vendors/jquery.easings.min.js"></script>
+
+
+    <!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
+    <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                css3: true,
+                verticalCentered: true,
+                responsiveHeight: 1,
+            });
+        });
+    </script>
+
+    <script src="js/typed.js"></script>
+    <script>
+        $(function() {
+            $(".action-typing-space").typed({
+                strings: ["I am a full stack UXer.", "I am a front-end developer.", "I am a UX designer.", "I am a back-end developer.", "I am a UX engineer.", "I am a service dog trainer.", "I am a mobile developer.", "I am an avid coffee drinker.", "I am a bassoonist.", "I am a service designer.", "I am a film composer.", "I am great on a team.", "I am often hungry."],
+                typeSpeed: 15,
+                startDelay: 4000,
+                backSpeed: 10,
+                shuffle: false,
+                loop: true,
+                backDelay: 3000,
+            });
+        });
+    </script>
+
+    <link href="./css/myStyles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id='fullpage'>
+        <div class='section' id='welcome-section'>
+            <div class="full-container welcome-page">
+                <!-- <img src="assets/bg.png" id="bg" alt=""> -->
+                <section class="full-left-rail full-rail"></section>
+                <section class="action-area">
+                    <section class="action-top-rail"></section>
+                    <section class="nav-rail">
+                        <section class="nav-spacing-rail"></section>
+                        <section class="nav-about nav-link"><a href='about.html'>About</a></section>
+                        <section class="nav-work nav-link">Work</section>
+                        <section class="nav-contact nav-link"><a href='contact.html'>Contact</a></section>
+                    </section>
+                    <section class="action-buffer"></section>
+                    <div class="action-hello">Hi.</div>
+                    <div class="action-iam">I am Sam.</div>
+                    <p class="action-typing-space"></p>
+                    <div class="action-bottom-rail"></div>
+                </section>
+                <section class="full-right-rail full-rail"></section>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
