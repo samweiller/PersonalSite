@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sam Weiller</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+    <script src="vendors/jquery.easings.min.js"></script>
+
+
+    <!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
+    <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                css3: true,
+                verticalCentered: true,
+                responsiveHeight: 1,
+            });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="./css/myStyles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+     </button>
+        <!-- <a class="navbar-brand" href="#">Navbar w/ text</a> -->
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ml-auto navbar-custom">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="work.html">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id='fullpage'>
+        <div class='section' id='contact-section'>
+            <div class="container contact-page">
+                <div class='row'>
+                    <div class='col-12 page-title contact-page-title'>
+                        Let's Chat.
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='col-12 email-line'>
+                        <a class='email-line' href='mailto:hello@samweiller.io'>hello@samweiller.io</a>
+                    </div>
+                </div>
+
+                <div class='row social-row'>
+                    <div class='col-2 social-icon-bit'>
+                        <a class='' href='http://linkedin.com/in/samweiller' target='_blank'><i class="fa fa-linkedin"></i></a>
+                    </div>
+
+                    <div class='col-2 social-icon-bit'>
+                        <a class='' href='http://github.com/samweiller' target='_blank'><i class="fa fa-github"></i></a>
+                    </div>
+
+                    <div class='col-2 social-icon-bit'>
+                        <a class='' href='http://pinterest.com/samweiller' target='_blank'><i class="fa fa-pinterest"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
