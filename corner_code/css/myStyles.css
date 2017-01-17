@@ -1,0 +1,431 @@
+* {
+   -webkit-font-smoothing: antialiased;
+   text-rendering: optimizeLegibility;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+.sec-hello {
+   vertical-align: middle;
+}
+
+#myVideo{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		top:0;
+		right:0;
+		width: 100%;
+		height: 100%;
+		background-size: 100% 100%;
+ 		background-color: white; /* in case the video doesn't fit the whole page*/
+  		background-position: center center;
+  		background-size: contain;
+   		object-fit: cover; /*cover video background */
+   		z-index:-1;
+	}
+   @media only screen and (max-width: 991px) {
+      #myVideo{
+      		position: absolute;
+      		right: 0;
+      		bottom: 0;
+      		top:0;
+      		left: 65%;
+      		width: 100%;
+      		height: 100%;
+      		background-size: 100% 100%;
+       		background-color: white; /* in case the video doesn't fit the whole page*/
+        		background-position: center center;
+        		background-size: contain;
+         		object-fit: cover; /*cover video background */
+         		z-index:-1;
+      	}
+
+}
+
+	/* Layer with position absolute in order to have it over the video
+	* (and hide the video navigation controls on mouse move)
+	* --------------------------------------- */
+	.sec-hello .layer{
+		/*position: relative;*/
+      z-index: 5;
+		/*width: 100%;
+		left: 0;
+		top: 0;*/
+	}
+
+	/*solves problem with overflowing video in Mac with Chrome */
+	.sec-hello {
+		overflow: hidden;
+	}
+
+.hello-header {
+    font-family: Montserrat;
+    font-size: 55px;
+    text-indent: -3px;
+    color: #fff
+}
+
+.hello-body {
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 20px;
+    text-indent: 0px;
+    color: #fff;
+}
+
+.affordance {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90px;
+    position: absolute;
+    top: 82%;
+    left: calc(50% - 40px);
+    opacity: 100;
+    display: flex;
+}
+
+#arrowLeft {
+  stroke-dasharray: 75;
+  stroke-dashoffset: 75;
+  animation: dash 2s linear forwards;
+  animation-delay: 6s;
+  width: 50px;
+  height: 50px;
+  /*margin-bottom: -18px;*/
+}
+
+#arrowRight {
+  stroke-dasharray: 75;
+  stroke-dashoffset: 75;
+  animation: dash 2s linear forwards;
+  animation-delay: 6s;
+  width: 50px;
+  height: 50px;
+  /*margin-top: -27px*/
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.who-bg {
+   /*position: absolute;
+   height: auto;
+   width: 100%;*/
+   filter: blur(3px) brightness(65%);
+   /*margin-top: -12%*/
+   position: absolute;
+   margin: -5px;
+   right: 0;
+   bottom: 0;
+   top:0;
+   left: 0;
+   width: 104%;
+   height: 104%;
+   background-size: 100% 100%;
+   background-color: white; /* in case the video doesn't fit the whole page*/
+   background-position: center center;
+   background-size: contain;
+      object-fit: cover; /*cover video background */
+      z-index:-1;
+}
+
+.sec-who .layer{
+   position: relative;
+   z-index: 5;
+   /*width: 100%;
+   left: 0;
+   top: 0;*/
+}
+
+/*solves problem with overflowing video in Mac with Chrome */
+.sec-who {
+   overflow: hidden;
+}
+
+.who-header {
+    font-family: Montserrat;
+    font-size: 50px;
+    text-indent: -3px;
+    color: #fff;
+}
+
+.who-body {
+    font-family: Raleway;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 18px;
+    text-indent: 0px;
+    color: #fff;
+}
+
+.resume-button-container {
+   padding-left: 20px;
+}
+
+.resume-button {
+   transition: background-color 0.5s ease;
+   background-color: #F5EA6C;
+   font-family: Raleway;
+   border: none;
+
+}
+
+.resume-button:hover {
+   background-color: #FFF;
+}
+
+.what-header {
+   font-family: Montserrat;
+   font-weight: Light;
+   font-size: 50px;
+   text-indent: -3px;
+   text-align: center;
+}
+
+.what-top-body {
+   font-family: Raleway;
+   font-weight: 400;
+   font-size: 15px;
+}
+
+.what-subtitle {
+   font-family: Montserrat;
+   font-weight: Light;
+}
+
+.what-body {
+   font-family: Raleway;
+   font-weight: 400;
+   font-size: 18px;
+}
+
+.work-header {
+   font-family: Montserrat;
+   font-weight: Light;
+   font-size: 50px;
+   text-indent: -3px;
+   text-align: center;
+   margin-bottom: 40px;
+   margin-top: 20px;
+}
+
+.caption {
+   font-family: Raleway;
+   font-size: 12px;
+}
+
+h4 {
+   font-size: 13px;
+   margin-top: 2px;
+   margin-bottom: 2px;
+}
+
+h4.caption {
+   margin-top: +7px;
+}
+
+.thumbnail {
+   transition: background-color 0.5s ease;
+   background-color: #99A9BA;
+   border: none;
+}
+
+.frontpage_square{
+   position:relative;
+   overflow:hidden;
+   padding-bottom:100%;
+}
+
+.frontpage_square img {
+   position: absolute;
+   height: 100%;
+}
+
+a.thumbnail:hover {
+   background-color: #F5EA6C;
+}
+
+a.thumbnail:hover .work-image-label {
+   background-color: #F5EA6C;
+}
+
+.work-image-label {
+   transition: background-color 0.5s ease;
+   position: absolute;
+   margin-top: 89%;
+   margin-left: 0;
+   padding-left: 4%;
+   padding-top: 0;
+   background-color: rgba(153, 169, 186, .6);
+   width: 100%;
+}
+
+.work-image-text {
+   margin-top: 3%;
+   margin-bottom: 4%;
+   font-family: Montserrat;
+   font-weight: 400;
+   color: black;
+   font-size: 16px;
+}
+
+@media only screen and (max-width: 1200px) {
+   .work-image-label {
+      transition: background-color 0.5s ease;
+      position: absolute;
+      margin-top: 89%;
+      margin-left: 0;
+      padding-left: 4%;
+      padding-top: 0;
+      background-color: rgba(153, 169, 186, .6);
+      width: 100%;
+   }
+
+   .work-image-text {
+      margin-top: 2%;
+      margin-bottom: 4%;
+      font-family: Montserrat;
+      font-weight: 400;
+      color: black;
+      font-size: 16px;
+   }
+}
+
+@media only screen and (max-width: 991px) {
+   .work-image-label {
+      transition: background-color 0.5s ease;
+      position: absolute;
+      margin-top: 86%;
+      margin-left: 0;
+      padding-left: 4%;
+      padding-top: 0;
+      background-color: rgba(153, 169, 186, .3);
+      width: 100%;
+   }
+
+   .work-image-text {
+      margin-top: 4%;
+      margin-bottom: 4%;
+      font-family: Montserrat;
+      font-weight: 400;
+      color: black;
+      font-size: 27px;
+   }
+}
+
+.contact-header {
+   font-family: Montserrat;
+   font-weight: Light;
+   font-size: 50px;
+   text-indent: -3px;
+   text-align: center;
+   color: #F5EA6C;
+}
+
+.contact-body {
+   font-family: Raleway;
+   font-weight: lighter;
+   font-size: 30px;
+   letter-spacing: 2px;
+   text-align: center;
+   margin: 25px;
+}
+
+.contact-body a {
+   color: #000
+}
+
+.contact-body a:hover {
+   text-decoration: underline;
+}
+
+.social-links {
+   text-align: center;
+   margin-top: 10px;
+}
+
+.social-icon {
+   font-size: 40px;
+   color: #000;
+   transition: color .5s ease;
+}
+
+.social-icon:hover {
+   color: #F5EA6C;
+}
+
+
+/* COLORS */
+/*.sec-hello {
+   background-image: linear-gradient(to bottom, #99A9BA, #8299B7)
+}
+
+.sec-who {
+   background-image: linear-gradient(to bottom, #8299B7, #6B89B3);
+}
+
+.sec-what {
+   background-image: linear-gradient(to bottom, #6B89B3, #557AB0)
+}
+
+.sec-work {
+   background-image: linear-gradient(to bottom, #557AB0, #3E6AAC)
+}
+
+.sec-contact {
+   background-image: linear-gradient(to bottom, #3E6AAC, #275AA9)
+}*/
+
+/*.sec-contact {
+   background-image: linear-gradient(to top, #99A9BA, #8299B7)
+}
+
+.sec-work {
+   background-image: linear-gradient(to top, #8299B7, #6B89B3);
+}
+
+.sec-what {
+   background-image: linear-gradient(to top, #6B89B3, #557AB0)
+}
+
+.sec-who {
+   background-image: linear-gradient(to top, #557AB0, #3E6AAC)
+}
+
+.sec-hello {
+   background-image: linear-gradient(to top, #3E6AAC, #275AA9)
+}*/
+
+.sec-hello {
+   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.sec-who {
+   /*background-color: #dd585a;*/
+   /*background-image: url('../img/WhoIAm.jpg');*/
+
+}
+
+
+
+
+
+.sec-what {
+   background-color: #58A04F
+}
+
+.sec-work {
+   background-color: #4EAAD9
+}
+
+.sec-contact {
+   background-color: #dd585a
+}
