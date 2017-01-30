@@ -128,7 +128,7 @@
 			if (this.stringsElement) {
 				this.strings = [];
 				this.stringsElement.hide();
-				console.log(this.stringsElement.children());
+				// console.log(this.stringsElement.children());
 				var strings = this.stringsElement.children();
 				$.each(strings, function(key, value){
 					self.strings.push($(value).html());
@@ -147,7 +147,7 @@
 			// varying values for setTimeout during typing
 			// can't be global since number changes each time loop is executed
 			var humanize = Math.round(Math.random() * (120 - 0)) + this.typeSpeed;
-			console.log(humanize)
+			// console.log(humanize)
 			var self = this;
 
 			// ------------- optional ------------- //
