@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<juiceboxgallery 
+<juiceboxgallery
 
-	galleryTitle="Section 2 - Behaviors"
+	galleryTitle=""
 	captionBackColor="rgba(0,0,0,.6)"
 	captionBackTopColor="rgba(0,0,0,.1)"
 	showImageOverlay="ALWAYS"
