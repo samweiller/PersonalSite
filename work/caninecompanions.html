@@ -9,10 +9,29 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link href="http://cdn.rawgit.com/noelboss/featherlight/1.7.1/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="http://cdn.rawgit.com/noelboss/featherlight/1.7.1/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+    <link href="http://cdn.rawgit.com/noelboss/featherlight/1.7.1/release/featherlight.gallery.min.css" type="text/css" rel="stylesheet" />
+    <script src="http://cdn.rawgit.com/noelboss/featherlight/1.7.1/release/featherlight.gallery.min.js" type="text/javascript" charset="utf-8"></script>
+
 
     <link rel="stylesheet" type="text/css" href="../css/jquery.fullPage.css" />
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+
+    <!-- <link rel="stylesheet" href="../css/flexslider.css" type="text/css">
+    <script src="../js/jquery.flexslider.js"></script>
+
+    <script type="text/javascript" charset="utf-8">
+        $(window).load(function() {
+            $('.flexslider').flexslider({
+                //  animation: "slide",
+                slideshow: "false",
+                controlNav: "thumbnails"
+            });
+        });
+    </script> -->
 
     <!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
     <script type="text/javascript" src="../vendors/scrolloverflow.min.js"></script>
@@ -27,6 +46,7 @@
 
     <script type="text/javascript">
         $(document).ready(function() {
+
             $('.parallax').parallax();
             $('#fullpage').fullpage({
                 css3: true,
@@ -34,20 +54,34 @@
                 responsiveHeight: 1,
                 scrollOverflow: true,
             });
+            $('a.gallery').featherlightGallery({
+                gallery: {
+                    previous: '«',
+                    next: '»',
+                    fadeIn: 300
+                },
+                openSpeed: 300
+            });
         });
     </script>
 
     <link href="../css/myStyles.css" rel="stylesheet">
     <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-90560901-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+        ga('create', 'UA-90560901-1', 'auto');
+        ga('send', 'pageview');
+    </script>
 </head>
 
 <body>
@@ -84,15 +118,66 @@
                 <div class='col'>
                     <div class="project-section-head">Overview</div>
                     <div class='who-text'>My Master’s thesis is being done alongside Canine Companions for Independence, working to improve their platform for reporting progress of service dog puppies in training. Overall, the project covers the entire user-centered design
-                        process, from user research to designing, deploying, and testing a new platform. Further, it includes the creation and execution of a collaborative design workshop with the primary stakeholders in the company. Due to the nature
+                        process, from user research to designing, deploying, and testing a new platform. Further, it includes the creation and execution of a product validation workshop with the primary stakeholders in the company. Due to the nature
                         of this collaboration, many details are unable to be posted publicly. If you are interested in further details than what is provided here, please contact me at <a href='mailto:projects@samweiller.io' target='_blank'>projects@samweiller.io</a>.</div>
                 </div>
             </div>
             <div class='row'>
                 <div class='col'>
-                   <div class="project-section-head">Experience</div>
-                    <div class='who-text'>This project has afforded me the opportunity to work on my own with a large, non-profit organization. Already, I have been able to sit down with various high-profile stakeholders (region managers, program managers) to get their insight on the problem space. Going forward, I will be designing and facilitating a self-designed co-creation workshop with these same stakeholders, allowing each of their unique perspectives to be heard and giving them a hand in the design process.
+                    <div class="project-section-head">Experience</div>
+                    <div class='who-text'>This project has afforded me the opportunity to work on my own with a large, non-profit organization. Already, I have been able to sit down with various high-profile stakeholders (region managers, program managers) to get their insight
+                        on the problem space. I have also had the opportunity to interview potential users of the platform to gain insights on how they use the current system and what would be helpful to them in a future product. Following this research stage, I went into a large design phase, where I frameworked out the product's layout, features, and general requirements, and followed that with sketches and wireframes of the designs. Currently, I am preparing for a validation workshop, in which I will present these designs to the executive team of the company. Following that, I will be doing a series of iterations and more user testing with potential users.
                     </div>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col'>
+                    <div class="project-section-head">Details</div>
+                    <div class='who-text'>The general gist of the platform is to cover four areas of puppy raising: Command Training, Socialization, Behavior Monitoring, and Health Tracking. The gallery below shows some sketches, iterations, and wireframes of the product so far. This page will be continuously updated as the project moves forward.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <!--START JUICEBOX EMBED-->
+                     <script src="jbcore/juicebox.js"></script>
+                     <script>
+                     new juicebox({
+                     containerId: "juicebox-container",
+                     galleryWidth: "100%",
+                     galleryHeight: "100%",
+                     backgroundColor: "#222222"
+                     });
+                     </script>
+                     <div id="juicebox-container">
+                     <!-- Image gallery content for non-javascript devices -->
+                     <noscript>
+                     <h1>Section 2 - Behaviors</h1>
+                     <p></p>
+                     <p><img src="images/Artboard.jpg" title="Original Platform Framework" alt="" /><br>Original Platform Framework </p>
+                     <p><img src="images/IMG_1473.jpg" title="Original Platform Map" alt="This map was created by creating a card for each proposed screen, then laying them out in a large open space (my kitchen floor)." /><br>Original Platform Map This map was created by creating a card for each proposed screen, then laying them out in a large open space (my kitchen floor).</p>
+                     <p><img src="images/Training1.jpg" title="Early Training Flows" alt="Initial sketches of potential flows for logging command training." /><br>Early Training Flows Initial sketches of potential flows for logging command training.</p>
+                     <p><img src="images/Training2.jpg" title="Later Training Flows" alt="" /><br>Later Training Flows </p>
+                     <p><img src="images/Training3.jpg" title="Command Screen Landing Ideation" alt="Ideation on the layout of the command landing screen (command list)." /><br>Command Screen Landing Ideation Ideation on the layout of the command landing screen (command list).</p>
+                     <p><img src="images/Training4.jpg" title="Command Details Ideation" alt="Multiple versions of the app bar for the command details page." /><br>Command Details Ideation Multiple versions of the app bar for the command details page.</p>
+                     <p><img src="images/Training5 Vid.jpg" title="Video Card Ideations" alt="Sketches of possible designs for the video cards." /><br>Video Card Ideations Sketches of possible designs for the video cards.</p>
+                     <p><img src="images/C1a - Command List.jpg" title="First Iteration - Command Page" alt="First iteration of the command landing page. It is a simple list view, sorted by the age at which you start teaching the command." /><br>First Iteration - Command Page First iteration of the command landing page. It is a simple list view, sorted by the age at which you start teaching the command.</p>
+                     <p><img src="images/C6 - Milestones Copy.jpg" title="First Iteration - Milestones Page" alt="This is a new concept for the monthly report: training milestones that can be checked off and tracked. In early feedback, users were confused as to the purpose of the numbers." /><br>First Iteration - Milestones Page This is a new concept for the monthly report: training milestones that can be checked off and tracked. In early feedback, users were confused as to the purpose of the numbers.</p>
+                     <p><img src="images/C1a - Command List Copy.jpg" title="Second Iteration - Command Page" alt="The command page was redesigned to be more readable, provide more information and, honestly, to look better. In early feedback, this was strongly preferred to the original list view." /><br>Second Iteration - Command Page The command page was redesigned to be more readable, provide more information and, honestly, to look better. In early feedback, this was strongly preferred to the original list view.</p>
+                     <p><img src="images/C4a - Training Expanded Copy.jpg" title="Second Iteration - Training Page" alt="In the second iteration, I redesigned the app bar to make the information easier to grasp. This page contains information for teaching a given command to a puppy" /><br>Second Iteration - Training Page In the second iteration, I redesigned the app bar to make the information easier to grasp. This page contains information for teaching a given command to a puppy</p>
+                     <p><img src="images/C5 - Videos Copy.jpg" title="Second Iteration - Videos" alt="This page provides videos of trainers teaching the current command. The cards here are a later iteration of the earlier sketches." /><br>Second Iteration - Videos This page provides videos of trainers teaching the current command. The cards here are a later iteration of the earlier sketches.</p>
+                     <p><img src="images/C5 - Videos Copy 2.jpg" title="Second Iteration - Milestones Page" alt="The second iteration of this page saw a change to material design cards. This provides a better hierarchy of information, and a clearer interaction." /><br>Second Iteration - Milestones Page The second iteration of this page saw a change to material design cards. This provides a better hierarchy of information, and a clearer interaction.</p>
+                     <p><img src="images/Behavior1.jpg" title="Early Behavior Screen Sketches" alt="FIrst sketches of some of the behavior screens." /><br>Early Behavior Screen Sketches FIrst sketches of some of the behavior screens.</p>
+                     <p><img src="images/Behavior2.jpg" title="Behavior Logging Sketch 1" alt="" /><br>Behavior Logging Sketch 1 </p>
+                     <p><img src="images/Behavior4.jpg" title="Behavior Logging Sketch 2" alt="" /><br>Behavior Logging Sketch 2 </p>
+                     <p><img src="images/Behavior5.jpg" title="Beahvior Landing First Sketch" alt="" /><br>Beahvior Landing First Sketch </p>
+                     <p><img src="images/Behavior6.jpg" title="Behavior Section Sketching Iterations" alt="" /><br>Behavior Section Sketching Iterations </p>
+                     <p><img src="images/iPhone 7 Plus Copy 2.jpg" title="iPhone 7 Plus Copy 2" alt="" /><br>iPhone 7 Plus Copy 2 </p>
+                     <p><img src="images/iPhone 7 Plus Copy.jpg" title="iPhone 7 Plus Copy" alt="" /><br>iPhone 7 Plus Copy </p>
+                     <p><img src="images/Log Outing.jpg" title="Log Outing" alt="" /><br>Log Outing </p>
+                     </noscript>
+                     </div>
+                     <!--END JUICEBOX EMBED-->
                 </div>
             </div>
         </div>

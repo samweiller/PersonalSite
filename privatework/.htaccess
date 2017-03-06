@@ -1,0 +1,5 @@
+AuthName "Please contact hello@samweiller.io for login information"
+AuthType Basic
+AuthUserFile /customers/3/1/c/samweiller.io/httpd.www/privatework/.htpasswd
+AuthGroupFile /dev/null 
+require valid-user

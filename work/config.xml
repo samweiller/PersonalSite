@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<juiceboxgallery 
+
+	galleryTitle="Section 2 - Behaviors"
+	captionBackColor="rgba(0,0,0,.6)"
+	captionBackTopColor="rgba(0,0,0,.1)"
+	showImageOverlay="ALWAYS"
+	showImageNav="ALWAYS"
+	captionPosition="OVERLAY"
+
+>
+  <image imageURL="images/Artboard.jpg"
+	thumbURL="thumbs/Artboard.jpg"
+	linkURL="images/Artboard.jpg"
+	linkTarget="_blank"
+	sourcePath="/var/folders/_4/7t14760s1pnbp670f6d8mbnc0000gn/T/2132611532/Artboard.png">
+    <title><![CDATA[Original Platform Framework]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/IMG_1473.jpg"
+	thumbURL="thumbs/IMG_1473.jpg"
+	linkURL="images/IMG_1473.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/samweiller/Downloads/IMG_1473.JPG">
+    <title><![CDATA[Original Platform Map]]></title>
+    <caption><![CDATA[This map was created by creating a card for each proposed screen, then laying them out in a large open space (my kitchen floor).]]></caption>
+  </image>
+  <image imageURL="images/Training1.jpg"
+	thumbURL="thumbs/Training1.jpg"
+	linkURL="images/Training1.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/samweiller/GitHub/PersonalSite/work/images/Training1.jpg">
+    <title><![CDATA[Early Training Flows]]></title>
+    <caption><![CDATA[Initial sketches of potential flows for logging command training.]]></caption>
+  </image>
+  <image imageURL="images/Training2.jpg"
+	thumbURL="thumbs/Training2.jpg"
+	linkURL="images/Training2.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/samweiller/GitHub/PersonalSite/work/images/Training2.jpg">
+    <title><![CDATA[Later Training Flows]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Training3.jpg"
+	thumbURL="thumbs/Training3.jpg"
+	linkURL="images/Training3.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/samweiller/GitHub/PersonalSite/work/images/Training3.jpg">
+    <title><![CDATA[Command Screen Landing Ideation]]></title>
+    <caption><![CDATA[Ideation on the layout of the command landing screen (command list).]]></caption>
+  </image>
+  <image imageURL="images/Training4.jpg"
+	thumbURL="thumbs/Training4.jpg"
+	linkURL="images/Training4.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/samweiller/GitHub/PersonalSite/work/images/Training4.jpg">
+    <title><![CDATA[Command Details Ideation]]></title>
+    <caption><![CDATA[Multiple versions of the app bar for the command details page.]]></caption>
+  </image>
+  <image imageURL="images/Training5 Vid.jpg"
+	thumbURL="thumbs/Training5 Vid.jpg"
+	linkURL="images/Training5 Vid.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/samweiller/GitHub/PersonalSite/work/images/Training5 Vid.jpg">
+    <title><![CDATA[Video Card Ideations]]></title>
+    <caption><![CDATA[Sketches of possible designs for the video cards.]]></caption>
+  </image>
+  <image imageURL="images/C1a - Command List.jpg"
+	thumbURL="thumbs/C1a - Command List.jpg"
+	linkURL="images/C1a - Command List.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/samweiller/GitHub/PersonalSite/work/images/C1a - Command List.jpg">
+    <title><![CDATA[First Iteration - Command Page]]></title>
+    <caption><![CDATA[First iteration of the command landing page. It is a simple list view, sorted by the age at which you start teaching the command.]]></caption>
+  </image>
+  <image imageURL="images/C6 - Milestones Copy.jpg"
+	thumbURL="thumbs/C6 - Milestones Copy.jpg"
+	linkURL="images/C6 - Milestones Copy.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/samweiller/GitHub/PersonalSite/work/images/C6 - Milestones Copy.jpg">
+    <title><![CDATA[First Iteration - Milestones Page]]></title>
+    <caption><![CDATA[This is a new concept for the monthly report: training milestones that can be checked off and tracked. In early feedback, users were confused as to the purpose of the numbers.]]></caption>
+  </image>
+  <image imageURL="images/C1a - Command List Copy.jpg"
+	thumbURL="thumbs/C1a - Command List Copy.jpg"
+	linkURL="images/C1a - Command List Copy.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/samweiller/GitHub/PersonalSite/work/images/C1a - Command List Copy.jpg">
+    <title><![CDATA[Second Iteration - Command Page]]></title>
+    <caption><![CDATA[The command page was redesigned to be more readable, provide more information and, honestly, to look better. In early feedback, this was strongly preferred to the original list view.]]></caption>
+  </image>
+  <image imageURL="images/C4a - Training Expanded Copy.jpg"
+	thumbURL="thumbs/C4a - Training Expanded Copy.jpg"
+	linkURL="images/C4a - Training Expanded Copy.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/samweiller/GitHub/PersonalSite/work/images/C4a - Training Expanded Copy.jpg">
+    <title><![CDATA[Second Iteration - Training Page]]></title>
+    <caption><![CDATA[In the second iteration, I redesigned the app bar to make the information easier to grasp. This page contains information for teaching a given command to a puppy]]></caption>
+  </image>
+  <image imageURL="images/C5 - Videos Copy.jpg"
+	thumbURL="thumbs/C5 - Videos Copy.jpg"
+	linkURL="images/C5 - Videos Copy.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/samweiller/GitHub/PersonalSite/work/images/C5 - Videos Copy.jpg">
+    <title><![CDATA[Second Iteration - Videos]]></title>
+    <caption><![CDATA[This page provides videos of trainers teaching the current command. The cards here are a later iteration of the earlier sketches.]]></caption>
+  </image>
+  <image imageURL="images/C5 - Videos Copy 2.jpg"
+	thumbURL="thumbs/C5 - Videos Copy 2.jpg"
+	linkURL="images/C5 - Videos Copy 2.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/samweiller/GitHub/PersonalSite/work/images/C5 - Videos Copy 2.jpg">
+    <title><![CDATA[Second Iteration - Milestones Page]]></title>
+    <caption><![CDATA[The second iteration of this page saw a change to material design cards. This provides a better hierarchy of information, and a clearer interaction.]]></caption>
+  </image>
+  <image imageURL="images/Behavior1.jpg"
+	thumbURL="thumbs/Behavior1.jpg"
+	linkURL="images/Behavior1.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/samweiller/Dropbox/Cci sketches/Behavior1.png">
+    <title><![CDATA[Early Behavior Screen Sketches]]></title>
+    <caption><![CDATA[FIrst sketches of some of the behavior screens.]]></caption>
+  </image>
+  <image imageURL="images/Behavior2.jpg"
+	thumbURL="thumbs/Behavior2.jpg"
+	linkURL="images/Behavior2.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/samweiller/Dropbox/Cci sketches/Behavior2.png">
+    <title><![CDATA[Behavior Logging Sketch 1]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Behavior4.jpg"
+	thumbURL="thumbs/Behavior4.jpg"
+	linkURL="images/Behavior4.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/samweiller/Dropbox/Cci sketches/Behavior4.png">
+    <title><![CDATA[Behavior Logging Sketch 2]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Behavior5.jpg"
+	thumbURL="thumbs/Behavior5.jpg"
+	linkURL="images/Behavior5.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/samweiller/Dropbox/Cci sketches/Behavior5.png">
+    <title><![CDATA[Beahvior Landing First Sketch]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Behavior6.jpg"
+	thumbURL="thumbs/Behavior6.jpg"
+	linkURL="images/Behavior6.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/samweiller/Dropbox/Cci sketches/Behavior6.png">
+    <title><![CDATA[Behavior Section Sketching Iterations]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/iPhone 7 Plus Copy 2.jpg"
+	thumbURL="thumbs/iPhone 7 Plus Copy 2.jpg"
+	linkURL="images/iPhone 7 Plus Copy 2.jpg"
+	linkTarget="_blank"
+	sourcePath="/var/folders/_4/7t14760s1pnbp670f6d8mbnc0000gn/T/1371230385/iPhone 7 Plus Copy 2.png">
+    <title><![CDATA[iPhone 7 Plus Copy 2]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/iPhone 7 Plus Copy.jpg"
+	thumbURL="thumbs/iPhone 7 Plus Copy.jpg"
+	linkURL="images/iPhone 7 Plus Copy.jpg"
+	linkTarget="_blank"
+	sourcePath="/var/folders/_4/7t14760s1pnbp670f6d8mbnc0000gn/T/-509816722/iPhone 7 Plus Copy.png">
+    <title><![CDATA[iPhone 7 Plus Copy]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Log Outing.jpg"
+	thumbURL="thumbs/Log Outing.jpg"
+	linkURL="images/Log Outing.jpg"
+	linkTarget="_blank"
+	sourcePath="/var/folders/_4/7t14760s1pnbp670f6d8mbnc0000gn/T/-601381271/Log Outing.png">
+    <title><![CDATA[Log Outing]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+</juiceboxgallery>
